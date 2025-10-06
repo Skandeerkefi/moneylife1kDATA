@@ -157,7 +157,8 @@ app.get("/api/affiliates", async (req, res) => {
 
 const gwsRoutes = require("./routes/gwsRoutes");
 app.use("/api/gws", gwsRoutes);
-
+const shockRoutes = require("./routes/shockRoutes");
+app.use("/api/shock", shockRoutes);
 // Start Server
 app.listen(PORT, () =>
 	console.log(`✅ Server is running at http://localhost:${PORT}`)
