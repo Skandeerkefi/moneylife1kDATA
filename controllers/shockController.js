@@ -43,7 +43,7 @@ exports.getReferrals = async (req, res) => {
 					username: item.username || "unknown",
 					totalReferrals: item.totalReferrals || item.referrals || 0,
 					earnings: item.earnings || 0,
-					wager: item.wager || 0, // ✅ added wager
+					wagerAmount: item.wagerAmount || 0, // ✅ added wager
 					data: item,
 			  }))
 			: [];
